@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import React, { useEffect, useRef, useState } from 'react';
@@ -178,10 +179,10 @@ export const App: React.FC = () => {
                   </button>
 
                   {/* overlay will cover the todo while it is being deleted or updated */}
-                  {/* <div data-cy="TodoLoader" className="modal overlay">
+                  <div data-cy="TodoLoader" className="modal overlay">
                     <div className="modal-background has-background-white-ter" />
                     <div className="loader" />
-                  </div> */}
+                  </div>
                 </div>
               );
             })}
