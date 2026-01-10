@@ -3,9 +3,11 @@ import { Todo } from '../types/Todo';
 
 type Props = {
   todos: Todo[];
-  setFilterStatus: (value: string) => void;
+  setFilterStatus: (value: Status) => void;
   filterStatus: string;
 };
+
+type Status = 'all' | 'active' | 'completed';
 
 export const Footer = ({ todos, setFilterStatus, filterStatus }: Props) => {
   return (
